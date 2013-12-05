@@ -1,0 +1,151 @@
+body {
+  background:#222;
+  color:#000;
+  font-family:'Raleway', sans-serif;
+  text-align:center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1 {
+  color:#fff;
+}
+
+h2 {
+  padding:0;
+  margin:.5em 0 .5em 0;
+  text-align:center;
+  font-size:1em;
+  color:#000;
+}
+
+section {
+  float: left;
+  text-align: left;
+  margin: 0 auto 5em auto;
+  display: inline-block;
+  position:relative;
+}
+
+section#main > div {
+  float: left;
+  height: 300px;
+  width: 300px;
+  background:#fff;
+}
+
+section#main > span {
+  position:absolute;
+  text-indent:-10000px;
+  border-radius:50%;
+  display:inline-block;
+  height:30px;
+  width:30px;
+  cursor:pointer;
+}
+
+section#main > span:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+  opacity: .7;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+section#main > span:active {
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+  opacity: 1;
+  -webkit-transition: all .1s;
+  -moz-transition: all .1s;
+  transition: all .1s;
+}
+
+div[data-taskclassification='urgent'] {
+  border-right:1px dashed #ccc;
+  border-bottom:1px dashed #ccc;
+}
+
+div[data-taskclassification='both'] {
+  border-bottom:1px dashed #ccc;
+}
+
+div[data-taskclassification='neither'] {
+  border-right:1px dashed #ccc;
+  clear:left;
+}
+
+section#dateInfo {
+  padding:1em;
+  float:left;
+  width:300px;
+  height:569px;
+  display:inline-block;
+  margin-left:20%;
+  background:#f5f5f5;
+}
+
+section#dateInfo ul {
+  padding:0;
+  margin:0;
+}
+
+section#dateInfo li {
+  line-height: 2.5em;
+}
+
+section#dateInfo #heading {
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+  font-size:1.25em;
+}
+
+section#dateInfo #navPrevious, section#dateInfo #navNext {
+  cursor:pointer;
+  font-size:1.25em;
+}
+
+section#dateInfo h2 {
+  text-align:left;
+  color:#000;
+  margin-top:1em;
+  font-size:2em;
+}
+
+section#dateInfo > span {
+  font-size:1em;
+  color:#000;
+}
+
+/* Effect 11: Super scaled */
+.scaleout {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  opacity: 0;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+
+.scalein {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: .75;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}

@@ -1,0 +1,32 @@
+{
+    "tasks": [
+        {
+            "title":"Cast vote in local elections",
+            "progressStatus": "incomplete",
+            "importanceScore":9, 
+            "urgencyScore":4,
+            "dueDate": "11/20/2013"
+        },
+        {
+            "title":"Change car tires",
+            "progressStatus": "complete",
+            "importanceScore":0, 
+            "urgencyScore":1,
+            "dueDate": "1/20/2014"
+        },
+        {
+            "title":"Go for a run",
+            "progressStatus": "complete",
+            "importanceScore":1, 
+            "urgencyScore":2,
+            "dueDate": "1/20/2014"
+        },
+        {
+            "title":"Change oil in car",
+            "progressStatus": "complete",
+            "importanceScore":7, 
+            "urgencyScore":9,
+            "dueDate": "1/20/2014"
+        }
+    ]
+}

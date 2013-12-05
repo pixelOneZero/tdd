@@ -1,0 +1,40 @@
+{
+    "tasks": [
+        
+        {
+            "title":"Buy clothes",
+            "progressStatus": "complete",
+            "importanceScore":2, 
+            "urgencyScore":8,
+            "dueDate": "10/20/2014"
+        },
+        {
+            "title":"Schedule",
+            "progressStatus": "complete",
+            "importanceScore":1, 
+            "urgencyScore":1,
+            "dueDate": "2/20/2013"
+        },
+        {
+            "title":"Go for a run",
+            "progressStatus": "complete",
+            "importanceScore":3, 
+            "urgencyScore":1,
+            "dueDate": "3/20/2014"
+        },
+        {
+            "title":"Become ambidextrous",
+            "progressStatus": "in progress",
+            "importanceScore":2, 
+            "urgencyScore":2,
+            "dueDate": "2/20/2014"
+        },
+        {
+            "title":"Go swimming",
+            "progressStatus": "complete",
+            "importanceScore":5, 
+            "urgencyScore":4,
+            "dueDate": "1/20/2014"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "tasks": [
+        {
+            "title":"Watch a movie",
+            "progressStatus": "incomplete",
+            "importanceScore":9, 
+            "urgencyScore":4,
+            "dueDate": "11/20/2013"
+        },
+        {
+            "title":"Go for a swim",
+            "progressStatus": "complete",
+            "importanceScore":4, 
+            "urgencyScore":4,
+            "dueDate": "1/20/2014"
+        },
+        {
+            "title":"Renew driver's license",
+            "progressStatus": "complete",
+            "importanceScore":2, 
+            "urgencyScore":8,
+            "dueDate": "1/20/2014"
+        },
+        {
+            "title":"Buy some TastyKakes",
+            "progressStatus": "complete",
+            "importanceScore":1, 
+            "urgencyScore":1,
+            "dueDate": "1/20/2014"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "tasks": [
+        {
+            "title":"Go for a hike",
+            "progressStatus": "complete",
+            "importanceScore":3, 
+            "urgencyScore":3,
+            "dueDate": "1/20/2014"
+        },
+        {
+            "title":"Buy groceries",
+            "progressStatus": "complete",
+            "importanceScore":7, 
+            "urgencyScore":8,
+            "dueDate": "1/20/2014"
+        },
+        {
+            "title":"Skydive",
+            "progressStatus": "complete",
+            "importanceScore":4, 
+            "urgencyScore":4,
+            "dueDate": "1/20/2014"
+        },
+        {
+            "title":"Make doge meme",
+            "progressStatus": "complete",
+            "importanceScore":7, 
+            "urgencyScore":7,
+            "dueDate": "1/20/2014"
+        },
+        {
+            "title":"Learn Russian",
+            "progressStatus": "incomplete",
+            "importanceScore":4, 
+            "urgencyScore":4,
+            "dueDate": "11/20/2013"
+        }
+    ]
+}

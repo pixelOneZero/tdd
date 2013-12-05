@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<title>
+  test driven development for JavaScript
+</title>
+<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../css/main.css" />
+<link rel="stylesheet" type="text/css" href="css/slides.css" />
+
+</head>
+<body id="slides">
+
+<section id="one">
+  <h1>
+    Test driven development for JavaScript
+  </h1>
+  <h2>
+    with
+  </h2>
+  <img src="images/jasmine_logo.png" />
+</section>
+
+<section id="two">
+  <h1>
+    BDD / TDD
+  </h1>
+
+  <h2>
+    Test driven development (TDD)
+  </h2>
+  <p>
+    Test specs are unit tests written before any coding
+  </p>
+
+  <h2>
+    Behavior driven development (BDD)
+  </h2>
+  <p>
+    Test specs are based on user stories and are written before any coding
+  </p>
+  </p>
+    Friendly spec descriptors and output for project teams
+  </p>
+  <p>
+    Includes UI testing, as well as model testing
+  </p>
+
+  <h2>
+    Both techniques (TDD and BDD)
+  </h2>
+  <p>
+    Inform the design of the application
+    <ul>
+      <li>
+        Cleaner interfaces
+      <li>
+        Better testability
+      </li>
+      <li>
+        Increased developer confidence
+      </li>
+    </ul>
+  </p>
+</section>
+
+<section id="three">
+  <h1>
+    Jasmine
+  </h1>
+  <h2>
+    A behavior driven development framework for testing JavaScript
+  </h2>
+  <ul>
+    <li>
+      Tests non DOM JavaScript code
+    </li>
+    <li>
+      A test suite is made of one or more specs.
+    </li>
+    <li>
+      A spec contains one or more expectations that evaluate to true or false.
+    </li>
+  </ul>
+  <pre>
+    <span style="color:#74c365;">describe</span>(<span style="color:#fada5e;">"A suite"</span>, <span style="color:#00a693;">function</span>() {
+      <span style="color:#74c365;">it</span>(<span style="color:#fada5e;">"contains spec with an expectation"</span>, <span style="color:#00a693;">function</span>() {
+        <span style="color:#74c365;">expect</span>(<span style="color:#00a693;">true</span>).<span style="color:#74c365;">toBe</span>(<span style="color:#00a693;">true</span>);
+      });
+    });
+  </pre>
+  <p>
+    Jasmine can be run via node in a console, or as JavaScript that outputs results in a browser
+  </p>
+</section>
+
+
+
+
+<section id="four">
+  <h1>
+    Installing and Running Jasmine with nodeJs
+  </h1>
+  <ul>
+    <li>
+      open Terminal, then run:
+    </li>
+    <li>
+      <tt>npm install jasmine-node -g</tt>
+      <ul>
+        <li>
+          Fetches jasmine-node files from npmjs.org
+        </li>
+        <li>
+          Run and re-install for any mkdir errors: <tt style="color:#555">sudo chown -R $USER /usr/local</tt>
+        </li>
+      </ul>
+    </li>
+    <li>
+      cd to root folder of your project
+    </li>
+    <li>
+      To run test specs: <tt style="color:#555">jasmine-node spec/</tt>
+      <ul>
+        <li>
+          spec directory contains Jasmine tests files
+        </li>
+        <li>
+          For error <tt style="color:#555"> File: 'spec/ is missing'</tt> run <tt>mkdir spec</tt> directory in project root then run <tt>jasmine-node spec/</tt>
+        </li>
+      </ul>
+    </li>
+    <li>
+      Jasmine tests were found and passed:
+       <pre>
+        Finished in 0.021 seconds
+        13 tests, 18 assertions, 0 failures, 0 skipped
+      </pre>
+    </li>
+    <li>
+      Jasmine tests were found and failed:
+      <pre>
+        .....F.......
+
+        Failures:
+
+          1) Task  due date getter function  should return the date that a task is due
+           Message:
+             Expected Date(Sun Dec 01 2013 21:21:53 GMT-0800 (PST)) to be null.
+           Stacktrace:
+             Error: Expected Date(Sun Dec 01 2013 21:21:53 GMT-0800 (PST)) to be null.
+            at null.<anonymous> (/Applications/XAMPP/xamppfiles/htdocs/tdd/spec/taskSpec.js:292:35)
+
+        Finished in 0.024 seconds
+        13 tests, 18 assertions, 1 failure, 0 skipped
+      </pre>
+    </li>
+  </ul>
+
+</section>
+
+
+
+
+<section>
+</section>
+
+
+<section id="five">
+  <h1>
+    Running Jasmine as standalone JavaScript
+  </h1>
+  <ul>
+    <li>
+      Download the files from GitHub (<a href="https://github.com/pivotal/jasmine/downloads" target="_blank">https://github.com/pivotal/jasmine/downloads</a>)
+    </li>
+    <li>
+      Place uncompressed files at root of project
+    </li>
+    <li>
+      <a href="http://localhost/tdd/jasmine-standalone-1.3.0/SpecRunner.html" target="_blank">SpecRunner.html</a> displays Jasmine test results for non-DOM specs
+    </li>
+    <li>
+      <a href="http://localhost/tdd/jasmine-standalone-1.3.0/taskAppSpecRunner.html" target="_blank">taskAppSpecRunner.html</a> displays Jasmine-jQuery test results for DOM specs
+    </li>
+  </ul>
+</section>
+
+<section id="six">
+  <h1>Testing the view</h1>
+  <p>
+    How can we test the view?
+  </p>
+  <p>
+    There are frameworks for that. Like: <a href="https://github.com/velesin/jasmine-jquery" target="_blank">https://github.com/velesin/jasmine-jquery</a>
+  </p>
+</section>
+
+<section id="seven">
+</section>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44140928-1', 'pixelonezero.com');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>

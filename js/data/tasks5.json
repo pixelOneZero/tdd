@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            "title":"Go mountain climbing",
+            "progressStatus": "incomplete",
+            "importanceScore":9, 
+            "urgencyScore":4,
+            "dueDate": "11/20/2013"
+        },
+        {
+            "title":"Renew passport",
+            "progressStatus": "incomplete",
+            "importanceScore":2, 
+            "urgencyScore":8,
+            "dueDate": "12/12/2013"
+        },
+        {
+            "title":"Buy plane tickets",
+            "progressStatus": "complete",
+            "importanceScore":1, 
+            "urgencyScore":1,
+            "dueDate": "5/20/2014"
+        }
+    ]
+}

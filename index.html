@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<title>
+  test driven development for JavaScript
+</title>
+<link href='http://fonts.googleapis.com/css?family=Raleway:200,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body>
+<h1>
+  TDD for JavaScript
+</h1>
+
+<section id="dateInfo">
+  <div>
+    <span id="navPrevious"><</span>
+    <div id="heading">
+      
+    </div>
+    <span id="navNext">></span>
+  </div>
+  <div id="taskInfo">
+  </div>
+</section>
+<section id="main">  
+  <div data-taskclassification="urgent">
+    <h2>
+      urgent / not important
+    </h2>
+  </div>
+  <div data-taskclassification="both">
+    <h2>
+      urgent / important
+    </h2>
+  </div>
+  <div data-taskclassification="neither">
+    <h2>
+      not urgent / not important
+    </h2>
+  </div>
+  <div data-taskclassification="important">
+    <h2>
+      not urgent / important
+    </h2>
+  </div>
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44140928-1', 'pixelonezero.com');
+  ga('send', 'pageview');
+</script>
+
+<!-- js classes -->
+<script type="text/javascript" src="js/Task.js"></script>
+<script type="text/javascript" src="js/Tasks.js"></script>
+
+<!-- app logic -->
+<script type="text/javascript" src="http://localhost/tdd/js/app.js"></script>
+
+</body>
+</html>
