@@ -18,7 +18,7 @@ describe("TaskApp View", function() {
       spyOn($, 'getJSON');
       var testFileName = 'tasks10';
       myTaskApp.getData( testFileName );
-      expect($.getJSON).toHaveBeenCalledWith('http://localhost/tdd/js/data/' + testFileName + ".json", jasmine.any(Function));
+      expect($.getJSON).toHaveBeenCalledWith('http://pixelonezero.com/public/tdd/js/data/' + testFileName + ".json", jasmine.any(Function));
     });
   });
 
